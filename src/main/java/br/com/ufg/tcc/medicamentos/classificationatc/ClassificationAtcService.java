@@ -59,7 +59,7 @@ public class ClassificationAtcService {
                         three.setChildren(fourLevels);
                         fourLevels.forEach(four -> {
                             List<ClassificacionAtc> fiveLevels = getLevelsChildren(four, classifications);
-                            four.setChildren(fourLevels);
+                            four.setChildren(fiveLevels);
                         });
                     });
                 });
