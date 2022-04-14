@@ -9,7 +9,8 @@ CREATE TABLE classificationatc (
     name VARCHAR(150),
     level int,
     codeatcparent VARCHAR(10),
-    CONSTRAINT id_class_atc PRIMARY KEY ( id )
+    CONSTRAINT id_class_atc PRIMARY KEY ( id ),
+    CONSTRAINT uk_codeatc UNIQUE (codeatc)
 );
 
 CREATE TABLE medicaments (

@@ -1,6 +1,8 @@
 package br.com.ufg.tcc.medicamentos.classificationatc.level;
 
 import br.com.ufg.tcc.medicamentos.classificationatc.ClassificationAtcEntity;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import java.util.List;
 import java.util.UUID;
@@ -21,6 +23,7 @@ public class ClassificacionAtc {
         this.children = children;
     }
 
+    @JsonBackReference
     private List<ClassificacionAtc> children;
 
     public ClassificacionAtc() {
@@ -75,15 +78,4 @@ public class ClassificacionAtc {
         this.codeAtcParent = codeAtcParent;
     }
 
-    @Override
-    public String toString() {
-        return "ClassificacionAtc{" +
-                "id=" + id +
-                ", codeAtc='" + codeAtc + '\'' +
-                ", name='" + name + '\'' +
-                ", level=" + level +
-                ", codeAtcParent='" + codeAtcParent + '\'' +
-                ", children=" + children +
-                '}';
-    }
 }

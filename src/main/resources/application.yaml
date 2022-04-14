@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/medicaments
+    password: postgres
+    username: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+
+aws:
+  credentials:
+    access-key: AKIA4YKBJIG2OC32EBTF
+    secret-key: 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
+    bucket-name: medicaments-tcc-ufg
