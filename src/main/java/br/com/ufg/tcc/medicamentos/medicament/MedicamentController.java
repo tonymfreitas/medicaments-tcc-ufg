@@ -31,7 +31,7 @@ public class MedicamentController {
 
     @PostMapping(consumes =  "application/json", produces = "application/json")
     public ResponseEntity<ResponseApi> createMedicament(@RequestBody MedicamentEntity medicament) {
-        service.saveOrUpdate(medicament);
+        service.save(medicament);
         return ResponseEntity.ok(ResponseApi.builder().message("Medicamento cadastrado com sucesso.").status(HttpStatus.OK).build());
     }
 

@@ -25,7 +25,12 @@ public class MedicamentService {
         return repository.getMedicamentByGroup(codeatcgroup);
     }
 
-    public void saveOrUpdate(MedicamentEntity medicament) {
+    public void save(final MedicamentEntity medicament) {
+        medicament.setId(UUID.randomUUID());
+        saveOrUpdate(medicament);
+    }
+
+    public void saveOrUpdate(final MedicamentEntity medicament) {
         repository.save(medicament);
     }
 

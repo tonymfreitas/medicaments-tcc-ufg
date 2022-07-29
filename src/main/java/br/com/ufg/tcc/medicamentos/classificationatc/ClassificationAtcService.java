@@ -2,8 +2,11 @@ package br.com.ufg.tcc.medicamentos.classificationatc;
 
 import br.com.ufg.tcc.medicamentos.classificationatc.level.ClassificacionAtc;
 import br.com.ufg.tcc.medicamentos.common.ResourceNotFoundException;
+import br.com.ufg.tcc.medicamentos.medicament.MedicamentComponent;
 import br.com.ufg.tcc.medicamentos.medicament.MedicamentEntity;
 import br.com.ufg.tcc.medicamentos.medicament.MedicamentRepository;
+import br.com.ufg.tcc.medicamentos.medicament.pharmaceuticalform.PharmaceuticalFormEntity;
+import br.com.ufg.tcc.medicamentos.medicament.pharmaceuticalform.PharmaceuticalFormRepository;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +29,9 @@ public class ClassificationAtcService {
 
     @Autowired
     private MedicamentRepository medRepository;
+
+    @Autowired
+    private PharmaceuticalFormRepository pharmaceuticalFormRepository;
 
     @Autowired
     private AwsClassificationAtcService awsClassificationAtcService;
@@ -89,6 +95,7 @@ public class ClassificationAtcService {
     // Método que lê todos os dados da planilha e grava no banco de daos PostgreSQL.
     // Verificar se falta dados na planilha e se os que existem são satisfatórios para criar os serviços de cadastro.
     public void save() {
+
         try {
 
             FileInputStream excelFile = new FileInputStream(new File(FILE_NAME));
@@ -99,6 +106,7 @@ public class ClassificationAtcService {
             List<String> medicamentos = new ArrayList<>();
             List<ClassificationAtcEntity> classificationsAtc = new ArrayList<>();
 
+            PharmaceuticalFormEntity pharmaceuticalFormDefault = pharmaceuticalFormRepository.findByCode("DEFAULT");
 
             while (iterator.hasNext()) {
 
@@ -194,12 +202,17 @@ public class ClassificationAtcService {
                     param.setCodeAtc(values[0]);
                     param.setName(values[1]);
                     param.setUnity(values[2]);
-                    param.setFormPhamaceutical(values[3]);
+                    param.setIdPhamaceuticalForm(pharmaceuticalFormDefault.getId());
+                    param.setComponent(MedicamentComponent.BASIC);
                     param.setVia(values[4]);
                     param.setUse(values[5]);
                     param.setRestriction(values[6]);
 
-                    medRepository.save(param);
+                    try {
+                        medRepository.save(param);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 }
 
             }
@@ -244,7 +257,7 @@ public class ClassificationAtcService {
     private void setChildren(ClassificacionAtc classificationAtc) {
         List<ClassificationAtcEntity> children = repository.findByCodeAtcParent(classificationAtc.getCodeAtc());
 
-        if(Objects.nonNull(children)) {
+        if (Objects.nonNull(children)) {
             classificationAtc.setChildren(convert(children));
 
             classificationAtc.getChildren().forEach(c -> {
