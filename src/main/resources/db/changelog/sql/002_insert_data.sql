@@ -1,0 +1,1 @@
+INSERT INTO pharmaceuticalform (code, description) VALUES ('DEFAULT', 'DEFAULT');

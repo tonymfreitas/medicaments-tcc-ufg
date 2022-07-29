@@ -1,0 +1,1631 @@
+[
+    {
+        "id": "bec7c7f8-12d0-49ec-af5b-e3b0d85ef7b3",
+        "codeAtc": "A",
+        "name": "TRATO ALIMENTAR E METABOLISMO",
+        "level": 1,
+        "codeAtcParent": "A",
+        "children": [
+            {
+                "id": "b3547418-9409-4487-8dd5-f16e4f4ea9a2",
+                "codeAtc": "A02",
+                "name": "Antiácidos e fármacos para o tratamento da úlcera péptica",
+                "level": 2,
+                "codeAtcParent": "A",
+                "children": [
+                    {
+                        "id": "8971e8c0-e4b8-43bc-ba61-bc5cb4d88125",
+                        "codeAtc": "A02A",
+                        "name": "Antiácidos",
+                        "level": 3,
+                        "codeAtcParent": "A02",
+                        "children": []
+                    },
+                    {
+                        "id": "fdec35dc-2a1b-4479-9a2d-b2e75099d6dc",
+                        "codeAtc": "A02B",
+                        "name": "Fármacos para o tratamento da úlcera péptica",
+                        "level": 3,
+                        "codeAtcParent": "A02",
+                        "children": [
+                            {
+                                "id": "9aaf053e-c331-43dc-b31f-732256c7535d",
+                                "codeAtc": "A02BA",
+                                "name": "Antagonista do receptor H2",
+                                "level": 4,
+                                "codeAtcParent": "A02B",
+                                "children": []
+                            },
+                            {
+                                "id": "6b042e60-2a47-4870-a2e7-5b6362131691",
+                                "codeAtc": "A02BC",
+                                "name": "Inibidores de bomba de próton",
+                                "level": 4,
+                                "codeAtcParent": "A02B",
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "b841cae4-9670-4249-b368-d7549719d9ba",
+                "codeAtc": "A03",
+                "name": "Agentes antiespasmódicos, anticolinérgicos e propulsivos",
+                "level": 2,
+                "codeAtcParent": "A",
+                "children": [
+                    {
+                        "id": "bd746d29-45b3-4c6d-9785-a9d48f2e2e5b",
+                        "codeAtc": "A03B",
+                        "name": "Beladona e derivados, isolados",
+                        "level": 3,
+                        "codeAtcParent": "A03",
+                        "children": []
+                    },
+                    {
+                        "id": "1d9b8763-0469-4d2d-8d01-0e1a51c1851e",
+                        "codeAtc": "A03D",
+                        "name": "Antiespasmódicos associados com analgésicos",
+                        "level": 3,
+                        "codeAtcParent": "A03",
+                        "children": []
+                    },
+                    {
+                        "id": "e1941a36-9871-4a27-89ec-ab786607101e",
+                        "codeAtc": "A03F",
+                        "name": "Propulsivos",
+                        "level": 3,
+                        "codeAtcParent": "A03",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": "b9eb927f-2336-40f9-92cb-539f08acc929",
+                "codeAtc": "A04",
+                "name": "Antieméticos e antinauseantes",
+                "level": 2,
+                "codeAtcParent": "A",
+                "children": []
+            },
+            {
+                "id": "8710e139-b03b-4e50-8086-445417fd7e77",
+                "codeAtc": "A06",
+                "name": "Laxativos",
+                "level": 2,
+                "codeAtcParent": "A",
+                "children": []
+            },
+            {
+                "id": "e1e393ef-b3c6-402a-9a75-4cbd46a40603",
+                "codeAtc": "A07",
+                "name": "Antidiarreicos, anti-inflamatórios intestinais, agentes anti-infecciosos",
+                "level": 2,
+                "codeAtcParent": "A",
+                "children": [
+                    {
+                        "id": "8dcdb6ec-1236-427e-86f8-ae6fa348eb46",
+                        "codeAtc": "A07A",
+                        "name": "Anti-infecciosos",
+                        "level": 3,
+                        "codeAtcParent": "A07",
+                        "children": []
+                    },
+                    {
+                        "id": "65f276a1-5636-44de-8051-460cc9817202",
+                        "codeAtc": "A07B",
+                        "name": "Adsorventes intestinais",
+                        "level": 3,
+                        "codeAtcParent": "A07",
+                        "children": []
+                    },
+                    {
+                        "id": "b68a6946-9bd6-44c5-a7f3-dc0ad9fec145",
+                        "codeAtc": "A07C",
+                        "name": "Carboidratos com eletrólitos",
+                        "level": 3,
+                        "codeAtcParent": "A07",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": "1daeade4-d0b1-41fd-8181-4d0128e4808b",
+                "codeAtc": "A10",
+                "name": "Fármacos utilizados em diabetes",
+                "level": 2,
+                "codeAtcParent": "A",
+                "children": [
+                    {
+                        "id": "64b77ba2-0739-48c2-a10d-f8dfde6cb6fd",
+                        "codeAtc": "A10A",
+                        "name": "Insulinas e análogos",
+                        "level": 3,
+                        "codeAtcParent": "A10",
+                        "children": []
+                    },
+                    {
+                        "id": "bb552db8-6f5d-4cf2-b9a2-52fcc8a20f5d",
+                        "codeAtc": "A10B",
+                        "name": "Hipoglicemiantes orais",
+                        "level": 3,
+                        "codeAtcParent": "A10",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": "4a3b3f28-89c7-44f0-b781-8ef0f6d9792a",
+                "codeAtc": "A11",
+                "name": "Vitaminas",
+                "level": 2,
+                "codeAtcParent": "A",
+                "children": []
+            },
+            {
+                "id": "9ac6bba0-fe6b-4089-a001-07a8e44c7922",
+                "codeAtc": "A12",
+                "name": "Suplementos minerais",
+                "level": 2,
+                "codeAtcParent": "A",
+                "children": []
+            }
+        ]
+    },
+    {
+        "id": "998378c4-b2f9-470d-869e-58ea0174fd3a",
+        "codeAtc": "B",
+        "name": "SANGUE E SISTEMA HEMATOPOÉTICO",
+        "level": 1,
+        "codeAtcParent": "B",
+        "children": [
+            {
+                "id": "889c9264-91be-48fe-9efa-1b4395f5b6b5",
+                "codeAtc": "B01",
+                "name": "Agentes antitrombóticos",
+                "level": 2,
+                "codeAtcParent": "B",
+                "children": []
+            },
+            {
+                "id": "86c0aae4-583c-46b2-b1f2-8d315c540890",
+                "codeAtc": "B02",
+                "name": "Anti-hemorrágicos",
+                "level": 2,
+                "codeAtcParent": "B",
+                "children": []
+            },
+            {
+                "id": "59f5888d-cdaa-4400-9789-ddf22e9dfcf2",
+                "codeAtc": "B03",
+                "name": "Preparações antianêmicas",
+                "level": 2,
+                "codeAtcParent": "B",
+                "children": [
+                    {
+                        "id": "7fae362a-a806-4cf4-b272-e2ab36f2ad7c",
+                        "codeAtc": "B03A",
+                        "name": "Preparações de Ferro",
+                        "level": 3,
+                        "codeAtcParent": "B03",
+                        "children": []
+                    },
+                    {
+                        "id": "72235bdf-2903-4a37-9499-4185a9ee19d7",
+                        "codeAtc": "B03B",
+                        "name": "Ácido fólico",
+                        "level": 3,
+                        "codeAtcParent": "B03",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": "f2c541c5-6684-4104-8340-446644f613ef",
+                "codeAtc": "B05",
+                "name": "Substitutos do sangue e soluções de perfusão",
+                "level": 2,
+                "codeAtcParent": "B",
+                "children": [
+                    {
+                        "id": "ba8023f0-96d7-480c-aca2-b07ae77be754",
+                        "codeAtc": "B05C",
+                        "name": "Soluções para irrigação",
+                        "level": 3,
+                        "codeAtcParent": "B05",
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "db004551-5149-4a3d-ae44-04d69006db64",
+        "codeAtc": "C",
+        "name": "SISTEMA CARDIOVASCULAR",
+        "level": 1,
+        "codeAtcParent": "C",
+        "children": [
+            {
+                "id": "1fbf5e3d-3002-43ef-96c6-5c2735218c46",
+                "codeAtc": "C01",
+                "name": "Terapia cardíaca",
+                "level": 2,
+                "codeAtcParent": "C",
+                "children": [
+                    {
+                        "id": "2ce94d36-67e3-4030-9e46-2c4eb496deb2",
+                        "codeAtc": "C01A",
+                        "name": "Glicosídeos cardíacos",
+                        "level": 3,
+                        "codeAtcParent": "C01",
+                        "children": []
+                    },
+                    {
+                        "id": "fa52a0e7-15a9-433e-b017-00e0eef36178",
+                        "codeAtc": "C01B",
+                        "name": "Antiarrítmicos",
+                        "level": 3,
+                        "codeAtcParent": "C01",
+                        "children": []
+                    },
+                    {
+                        "id": "ac3b2fb8-8498-4c5b-8ee1-f9dc5d200815",
+                        "codeAtc": "C01C",
+                        "name": "Estimulantes cardíacos (exceto glicosídeos cardíacos)",
+                        "level": 3,
+                        "codeAtcParent": "C01",
+                        "children": []
+                    },
+                    {
+                        "id": "bdc62cf9-96d7-4124-a5bb-875d0d6af83d",
+                        "codeAtc": "C01D",
+                        "name": "Vasodilatadores usados nas doenças cardíacas",
+                        "level": 3,
+                        "codeAtcParent": "C01",
+                        "children": []
+                    },
+                    {
+                        "id": "ab6638df-4ba1-4ce4-b9f1-a798b6379ff7",
+                        "codeAtc": "C01E",
+                        "name": "Outras preparações cardíacas",
+                        "level": 3,
+                        "codeAtcParent": "C01",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": "bda6492f-7737-4e35-ba58-3dde4e050a12",
+                "codeAtc": "C02",
+                "name": "Anti-hipertensivos",
+                "level": 2,
+                "codeAtcParent": "C",
+                "children": [
+                    {
+                        "id": "ba17e2bf-d728-4f91-8831-b548fde9aaaf",
+                        "codeAtc": "C02A",
+                        "name": "Agentes antiadrenérgicos de ação central",
+                        "level": 3,
+                        "codeAtcParent": "C02",
+                        "children": []
+                    },
+                    {
+                        "id": "21bf25a9-31aa-4b12-9914-9d2b40b0ab8e",
+                        "codeAtc": "C02D",
+                        "name": "Vasodilatadores diretos - agentes que atuam no músculo liso das artérias",
+                        "level": 3,
+                        "codeAtcParent": "C02",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": "b05fca7f-100c-4432-9ef6-e08ba53e3edc",
+                "codeAtc": "C03",
+                "name": "Diuréticos",
+                "level": 2,
+                "codeAtcParent": "C",
+                "children": [
+                    {
+                        "id": "4a1026b8-c3ce-4a7e-be57-065dd6c65473",
+                        "codeAtc": "C03A",
+                        "name": "Diuréticos tiazídicos",
+                        "level": 3,
+                        "codeAtcParent": "C03",
+                        "children": []
+                    },
+                    {
+                        "id": "6fb2a156-e0bc-4f50-8bc7-01f2aa366d19",
+                        "codeAtc": "C03C",
+                        "name": "Diuréticos de alça",
+                        "level": 3,
+                        "codeAtcParent": "C03",
+                        "children": []
+                    },
+                    {
+                        "id": "66174384-1356-4e4f-831a-f6e65fcc58e8",
+                        "codeAtc": "C03D",
+                        "name": "Diuréticos poupadores de potássio",
+                        "level": 3,
+                        "codeAtcParent": "C03",
+                        "children": [
+                            {
+                                "id": "ee621026-a127-4d1f-aaf3-dd458dca9c49",
+                                "codeAtc": "C03DA",
+                                "name": "Antagonista de aldosterona",
+                                "level": 4,
+                                "codeAtcParent": "C03D",
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "41b7827d-1f07-4f73-ba70-5adc639fe468",
+                "codeAtc": "C07",
+                "name": "Agentes beta-bloqueadores",
+                "level": 2,
+                "codeAtcParent": "C",
+                "children": []
+            },
+            {
+                "id": "18b35759-1465-49b8-a47a-cd9474931545",
+                "codeAtc": "C08",
+                "name": "Bloqueador de canal de cálcio",
+                "level": 2,
+                "codeAtcParent": "C",
+                "children": []
+            },
+            {
+                "id": "aa903748-4937-4b7e-91f0-3aaba1167964",
+                "codeAtc": "C09",
+                "name": "Agentes que agem no sistema renina-angiotensina",
+                "level": 2,
+                "codeAtcParent": "C",
+                "children": [
+                    {
+                        "id": "716c0473-8a22-4c8c-84aa-1e6fc861e9fd",
+                        "codeAtc": "C09A",
+                        "name": "Inibidores da ECA",
+                        "level": 3,
+                        "codeAtcParent": "C09",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": "45490ffd-18e1-4ebb-892f-b5786651f0bd",
+                "codeAtc": "C10",
+                "name": "Agentes hipolipemiantes",
+                "level": 2,
+                "codeAtcParent": "C",
+                "children": []
+            }
+        ]
+    },
+    {
+        "id": "62d18446-b293-4119-9f55-2c559a67f279",
+        "codeAtc": "D",
+        "name": "DERMATOLÓGICOS",
+        "level": 1,
+        "codeAtcParent": "D",
+        "children": [
+            {
+                "id": "fc551859-ebf3-4733-8067-df7e91070244",
+                "codeAtc": "D01",
+                "name": "Antifúngicos de uso tópico",
+                "level": 2,
+                "codeAtcParent": "D",
+                "children": []
+            },
+            {
+                "id": "34368b0a-fff5-4a7d-a0e3-58441e3ba1f4",
+                "codeAtc": "D02",
+                "name": "Emolientes e protetores",
+                "level": 2,
+                "codeAtcParent": "D",
+                "children": [
+                    {
+                        "id": "c1801844-486e-4d7e-91e5-f29a668b8f75",
+                        "codeAtc": "D02B",
+                        "name": "Protetores contra raios UV",
+                        "level": 3,
+                        "codeAtcParent": "D02",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": "d9b1dac5-a26c-4819-8b2a-9ba177c2868a",
+                "codeAtc": "D03",
+                "name": "Preparações para tratamento de feridas e úlceras",
+                "level": 2,
+                "codeAtcParent": "D",
+                "children": [
+                    {
+                        "id": "9c251b4c-6794-4d6f-80d5-8ecafdb7b5df",
+                        "codeAtc": "D03A",
+                        "name": "Cicatrizantes",
+                        "level": 3,
+                        "codeAtcParent": "D03",
+                        "children": []
+                    },
+                    {
+                        "id": "68a0add4-689d-4473-ad04-96e6c0ca7574",
+                        "codeAtc": "D03B",
+                        "name": "Enzimas",
+                        "level": 3,
+                        "codeAtcParent": "D03",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": "bcd71e85-1bf7-4699-9622-0e9c21ddfdf2",
+                "codeAtc": "D04",
+                "name": "Antipruríticos e anestésicos",
+                "level": 2,
+                "codeAtcParent": "D",
+                "children": []
+            },
+            {
+                "id": "fcc9b888-448d-475f-a1f1-9e343d998a7b",
+                "codeAtc": "D06",
+                "name": "Antibióticos e quimioterápicos para uso dermatológico",
+                "level": 2,
+                "codeAtcParent": "D",
+                "children": [
+                    {
+                        "id": "c3e2153b-b425-4c3f-aa0f-9906d9c4baa9",
+                        "codeAtc": "D06A",
+                        "name": "Antibióticos de uso tópico",
+                        "level": 3,
+                        "codeAtcParent": "D06",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": "01aef288-98dd-4595-a20d-8983e797305f",
+                "codeAtc": "D07",
+                "name": "Corticosteroides, preparações dermatológicas",
+                "level": 2,
+                "codeAtcParent": "D",
+                "children": []
+            },
+            {
+                "id": "48708178-9655-4dd6-9ac9-7465eed5cc84",
+                "codeAtc": "D08",
+                "name": "Antissépticos e desinfetantes",
+                "level": 2,
+                "codeAtcParent": "D",
+                "children": []
+            },
+            {
+                "id": "15614a07-acd6-4421-98a8-81689de63db2",
+                "codeAtc": "D11",
+                "name": "Outras preparações dermatológicas",
+                "level": 2,
+                "codeAtcParent": "D",
+                "children": []
+            }
+        ]
+    },
+    {
+        "id": "8839572e-657a-4a07-bf88-039415cbab8a",
+        "codeAtc": "G",
+        "name": "SISTEMA GENITURINÁRIO E HORMÔNIO SEXUAIS",
+        "level": 1,
+        "codeAtcParent": "G",
+        "children": [
+            {
+                "id": "11d02537-214c-4b11-abae-b67eb5991e02",
+                "codeAtc": "G01",
+                "name": "Anti-infecciosos e antissépticos ginecológicos",
+                "level": 2,
+                "codeAtcParent": "G",
+                "children": []
+            },
+            {
+                "id": "884a19b9-d357-40d8-b1bc-a2c971a787a6",
+                "codeAtc": "G02",
+                "name": "Outros ginecológicos",
+                "level": 2,
+                "codeAtcParent": "G",
+                "children": [
+                    {
+                        "id": "877ee3a6-c216-4ea9-856c-978915fd978a",
+                        "codeAtc": "G02A",
+                        "name": "Oxitócicos",
+                        "level": 3,
+                        "codeAtcParent": "G02",
+                        "children": [
+                            {
+                                "id": "a5f16db4-609b-4cd9-81d3-62859cde823c",
+                                "codeAtc": "G02AB",
+                                "name": "Alcaloides da ergotamina",
+                                "level": 4,
+                                "codeAtcParent": "G02A",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "941f8138-55a9-4433-afce-8c7a287b4ae7",
+                        "codeAtc": "G02B",
+                        "name": "Contraceptivos de uso tópico",
+                        "level": 3,
+                        "codeAtcParent": "G02",
+                        "children": []
+                    },
+                    {
+                        "id": "4d04c823-cc30-48e4-a93a-ca3b08bf19f7",
+                        "codeAtc": "G02C",
+                        "name": "Outros fármacos ginecológicos",
+                        "level": 3,
+                        "codeAtcParent": "G02",
+                        "children": [
+                            {
+                                "id": "a3e86236-31a1-44c1-a1e1-237b6639476d",
+                                "codeAtc": "G02CB",
+                                "name": "Inibidores de prolactina",
+                                "level": 4,
+                                "codeAtcParent": "G02C",
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "9eb30d41-5962-4403-a1a1-0dd7974c026f",
+                "codeAtc": "G03",
+                "name": "Hormônios sexuais e moduladores do sistema genital",
+                "level": 2,
+                "codeAtcParent": "G",
+                "children": [
+                    {
+                        "id": "7f8f8537-4872-4404-9e90-b8f160f137f8",
+                        "codeAtc": "G03A",
+                        "name": "Contraceptivos hormonais para uso sistêmico",
+                        "level": 3,
+                        "codeAtcParent": "G03",
+                        "children": [
+                            {
+                                "id": "3b482d9a-0b6a-4844-914b-22e68b2d3ecf",
+                                "codeAtc": "G03AA",
+                                "name": "Combinações fixas de progestogênios e estrogênios",
+                                "level": 4,
+                                "codeAtcParent": "G03A",
+                                "children": []
+                            },
+                            {
+                                "id": "08d6cb0a-0ead-41c8-be75-8179fe944138",
+                                "codeAtc": "G03AC",
+                                "name": "Progestogênios",
+                                "level": 4,
+                                "codeAtcParent": "G03A",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "055742dd-29c9-423d-a626-d7348a65a8b8",
+                        "codeAtc": "G03C",
+                        "name": "Estrogênios",
+                        "level": 3,
+                        "codeAtcParent": "G03",
+                        "children": []
+                    },
+                    {
+                        "id": "29cfc8cc-6783-4488-b053-5fffb4fe7880",
+                        "codeAtc": "G03F",
+                        "name": "Progestogênios e estrógenos combinados",
+                        "level": 3,
+                        "codeAtcParent": "G03",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": "8eca7529-5463-4962-8d90-aa152524d9d2",
+                "codeAtc": "G04",
+                "name": "Urológicos",
+                "level": 2,
+                "codeAtcParent": "G",
+                "children": [
+                    {
+                        "id": "52bb2908-b3f4-4773-b051-0c5801122d3e",
+                        "codeAtc": "G04C",
+                        "name": "Fármacos utilizados na hiperplasia prostática benigna",
+                        "level": 3,
+                        "codeAtcParent": "G04",
+                        "children": [
+                            {
+                                "id": "c2410860-4163-4972-884c-77e18ad9fa3f",
+                                "codeAtc": "G04CA",
+                                "name": "Antagonistas alfa-adrenérgicos",
+                                "level": 4,
+                                "codeAtcParent": "G04C",
+                                "children": []
+                            },
+                            {
+                                "id": "efb96702-2900-46c5-b1a0-3dafbb616dc5",
+                                "codeAtc": "G04CB",
+                                "name": "Inibidores da testosterona 5 alfa-redutase",
+                                "level": 4,
+                                "codeAtcParent": "G04C",
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "faa06077-514a-41d9-a7a3-0c5b1daa4e1d",
+        "codeAtc": "H",
+        "name": "PREPARAÇÕES HORMONAIS SISTÊMICAS, EXCLUINDO HORMÔNIOS SEXUAIS",
+        "level": 1,
+        "codeAtcParent": "H",
+        "children": [
+            {
+                "id": "2b2999da-79c9-47eb-9bc8-20b3541f6725",
+                "codeAtc": "H02",
+                "name": "Corticoides de uso sistêmico",
+                "level": 2,
+                "codeAtcParent": "H",
+                "children": []
+            },
+            {
+                "id": "da888d0d-0fa6-4ceb-a16d-5451dae44fa4",
+                "codeAtc": "H03",
+                "name": "Terapia para tireóide",
+                "level": 2,
+                "codeAtcParent": "H",
+                "children": [
+                    {
+                        "id": "e23b1b37-696f-452f-be8d-c2596315a92a",
+                        "codeAtc": "H03A",
+                        "name": "Hormônios tiroidianos",
+                        "level": 3,
+                        "codeAtcParent": "H03",
+                        "children": []
+                    },
+                    {
+                        "id": "c42d119e-070b-414a-9ef6-8605106ebbe6",
+                        "codeAtc": "H03B",
+                        "name": "Antitiroidianos",
+                        "level": 3,
+                        "codeAtcParent": "H03",
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "79453835-131c-4a47-bdc4-59f4543bcba7",
+        "codeAtc": "J",
+        "name": "AGENTES ANTI-INFECCIOSOS DE USO SISTÊMICO",
+        "level": 1,
+        "codeAtcParent": "J",
+        "children": [
+            {
+                "id": "b27fb7a3-c9a8-449a-a8c8-738ef5417a96",
+                "codeAtc": "J01",
+                "name": "Antimicrobianos de uso sistêmico",
+                "level": 2,
+                "codeAtcParent": "J",
+                "children": [
+                    {
+                        "id": "94877e5a-c580-4d6a-b8f1-055b14ff7228",
+                        "codeAtc": "J01A",
+                        "name": "Tetraciclinas",
+                        "level": 3,
+                        "codeAtcParent": "J01",
+                        "children": []
+                    },
+                    {
+                        "id": "56af964c-44c8-4fc3-bf2b-37882b2ba25d",
+                        "codeAtc": "J01B",
+                        "name": "Anfenicóis",
+                        "level": 3,
+                        "codeAtcParent": "J01",
+                        "children": []
+                    },
+                    {
+                        "id": "d33fddf1-a3db-4f21-be6b-ab9d4d0ae6ab",
+                        "codeAtc": "J01C",
+                        "name": "Penicilinas, antibacterianos beta-lactâmicos",
+                        "level": 3,
+                        "codeAtcParent": "J01",
+                        "children": [
+                            {
+                                "id": "84f820fa-4a0b-4f68-af2d-51b00a026940",
+                                "codeAtc": "J01CA",
+                                "name": "Penicilinas de amplo espectro",
+                                "level": 4,
+                                "codeAtcParent": "J01C",
+                                "children": []
+                            },
+                            {
+                                "id": "690189b2-ea19-4117-b310-124b8fa0aa69",
+                                "codeAtc": "J01CE",
+                                "name": "Penicilinas sensíveis à beta-lactamase",
+                                "level": 4,
+                                "codeAtcParent": "J01C",
+                                "children": []
+                            },
+                            {
+                                "id": "2dfb60e5-961f-439b-bbd9-2e7ae357b66a",
+                                "codeAtc": "J01CF",
+                                "name": "Penicilinas resistentes à beta-lactamase",
+                                "level": 4,
+                                "codeAtcParent": "J01C",
+                                "children": []
+                            },
+                            {
+                                "id": "85e35fa6-8c87-4b88-bf86-93031bf88b75",
+                                "codeAtc": "J01CR",
+                                "name": "Penicilinas associadas a inibidores de beta-lactamase",
+                                "level": 4,
+                                "codeAtcParent": "J01C",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "237dd762-9335-4bd3-9742-be1fccbcc141",
+                        "codeAtc": "J01D",
+                        "name": "Outros antibacterianos beta-lactâmicos",
+                        "level": 3,
+                        "codeAtcParent": "J01",
+                        "children": [
+                            {
+                                "id": "5970fd4f-fa99-4a6f-ba5f-01b82727f082",
+                                "codeAtc": "J01DB",
+                                "name": "Cefalosporinas de primeira geração",
+                                "level": 4,
+                                "codeAtcParent": "J01D",
+                                "children": []
+                            },
+                            {
+                                "id": "379dfb90-7b83-4985-af0c-dd02eda3dd64",
+                                "codeAtc": "J01DC",
+                                "name": "Cefalosporinas de segunda geração",
+                                "level": 4,
+                                "codeAtcParent": "J01D",
+                                "children": []
+                            },
+                            {
+                                "id": "2423acb8-cd8b-4b3e-8cb4-3693f8729dd5",
+                                "codeAtc": "J01DD",
+                                "name": "Cefalosporinas de terceira geração",
+                                "level": 4,
+                                "codeAtcParent": "J01D",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "743b6bc9-dca8-4e4c-a71c-e2be4f344f70",
+                        "codeAtc": "J01E",
+                        "name": "Sulfonamidas e trimetoprima",
+                        "level": 3,
+                        "codeAtcParent": "J01",
+                        "children": []
+                    },
+                    {
+                        "id": "01ef80e0-28ce-4166-94e1-10817927f122",
+                        "codeAtc": "J01F",
+                        "name": "Macrolídeos e lincosaminas",
+                        "level": 3,
+                        "codeAtcParent": "J01",
+                        "children": []
+                    },
+                    {
+                        "id": "a703a160-8bd7-4d16-abd0-36c62f2d7512",
+                        "codeAtc": "J01G",
+                        "name": "Aminoglicosídeos",
+                        "level": 3,
+                        "codeAtcParent": "J01",
+                        "children": []
+                    },
+                    {
+                        "id": "c7460106-cee6-4b65-9b6a-3ef80dbdd684",
+                        "codeAtc": "J01M",
+                        "name": "Quinolonas",
+                        "level": 3,
+                        "codeAtcParent": "J01",
+                        "children": []
+                    },
+                    {
+                        "id": "e344d563-ff33-48fb-bff2-ad4d42ecdde9",
+                        "codeAtc": "J01X",
+                        "name": "Outros antibacterianos",
+                        "level": 3,
+                        "codeAtcParent": "J01",
+                        "children": [
+                            {
+                                "id": "4be29f6d-f6e3-470a-8c91-373955c8e443",
+                                "codeAtc": "J01XD",
+                                "name": "Derivado imidazólico",
+                                "level": 4,
+                                "codeAtcParent": "J01X",
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "be628e38-f046-48aa-97a0-8cc955ae06cd",
+                "codeAtc": "J02",
+                "name": "Antimicótico de uso sistêmico",
+                "level": 2,
+                "codeAtcParent": "J",
+                "children": []
+            },
+            {
+                "id": "6172f561-8686-4fc0-b55b-3b4a0916a36f",
+                "codeAtc": "J04",
+                "name": "Antimicobacteriano",
+                "level": 2,
+                "codeAtcParent": "J",
+                "children": [
+                    {
+                        "id": "01e5639c-ccf9-48e8-a59b-f36d01572334",
+                        "codeAtc": "J04A",
+                        "name": "Tuberculostático",
+                        "level": 3,
+                        "codeAtcParent": "J04",
+                        "children": []
+                    },
+                    {
+                        "id": "bb772980-a3a1-4452-aabf-3091d08797b7",
+                        "codeAtc": "J04B",
+                        "name": "Fármacos para tratamento da Hanseniase",
+                        "level": 3,
+                        "codeAtcParent": "J04",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": "1f921547-561b-434d-bbd4-aa3e6943d858",
+                "codeAtc": "J05",
+                "name": "Antivirais de uso sistêmico",
+                "level": 2,
+                "codeAtcParent": "J",
+                "children": [
+                    {
+                        "id": "b3253894-0e39-426e-a072-da4c2dfb6508",
+                        "codeAtc": "J05A",
+                        "name": "Antivirais de ação direta",
+                        "level": 3,
+                        "codeAtcParent": "J05",
+                        "children": [
+                            {
+                                "id": "8b5142a4-cee5-4359-b211-cbb07ae05730",
+                                "codeAtc": "J05AB",
+                                "name": "Nucleosídeo e nucleotídeo, exceto inibidores da transcriptase reversa",
+                                "level": 4,
+                                "codeAtcParent": "J05A",
+                                "children": []
+                            },
+                            {
+                                "id": "edeab5ff-93df-4df7-8254-e834e140a337",
+                                "codeAtc": "J05AE",
+                                "name": "Inibidores da protease",
+                                "level": 4,
+                                "codeAtcParent": "J05A",
+                                "children": []
+                            },
+                            {
+                                "id": "3e7c2099-4591-4a17-8c46-db23cacfbafc",
+                                "codeAtc": "J05AF",
+                                "name": "Inibidores da transcriptase reversa nucleosídeo",
+                                "level": 4,
+                                "codeAtcParent": "J05A",
+                                "children": []
+                            },
+                            {
+                                "id": "fc966b30-a4a7-42a8-88ef-dbe5d6e8e366",
+                                "codeAtc": "J05AG",
+                                "name": "Inibidores da transcriptase reversa nao-nucleosídeo",
+                                "level": 4,
+                                "codeAtcParent": "J05A",
+                                "children": []
+                            },
+                            {
+                                "id": "d394f8ce-72ed-4df9-a8b0-0fa9a82f91d8",
+                                "codeAtc": "J05AR",
+                                "name": "Antivirais combinados para o tratamento da infecção pelo HIV",
+                                "level": 4,
+                                "codeAtcParent": "J05A",
+                                "children": []
+                            },
+                            {
+                                "id": "163dcc7e-80b5-459c-8854-fe45769d1f8d",
+                                "codeAtc": "J05AX",
+                                "name": "Outros antirretrovirais",
+                                "level": 4,
+                                "codeAtcParent": "J05A",
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "21c88b0d-5814-4f10-b72f-89f6409516ee",
+        "codeAtc": "L",
+        "name": "AGENTES IMUNOMODULADORES",
+        "level": 1,
+        "codeAtcParent": "L",
+        "children": [
+            {
+                "id": "9db1a0d1-b4c9-45eb-a989-6cd81209fdbb",
+                "codeAtc": "L04",
+                "name": "Agentes imunossupressores",
+                "level": 2,
+                "codeAtcParent": "L",
+                "children": []
+            }
+        ]
+    },
+    {
+        "id": "ab66f564-5a44-4dd3-b8c9-016390163cff",
+        "codeAtc": "M",
+        "name": "SISTEMA MUSCULO-ESQUELÉTICO",
+        "level": 1,
+        "codeAtcParent": "M",
+        "children": [
+            {
+                "id": "7044e4c8-7848-43d6-98e7-80896c7a8448",
+                "codeAtc": "M01",
+                "name": "Produtos antirreumáticos e anti-inflamatórios",
+                "level": 2,
+                "codeAtcParent": "M",
+                "children": [
+                    {
+                        "id": "9d8212d9-cb4e-48b0-a8c0-ea30c064c32a",
+                        "codeAtc": "M01A",
+                        "name": "Agentes anti-inflamatórios e antirreumáticos nao-esteroides",
+                        "level": 3,
+                        "codeAtcParent": "M01",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": "49dcf925-267a-4c38-9578-6f61caeafdc0",
+                "codeAtc": "M04",
+                "name": "Antigotosos",
+                "level": 2,
+                "codeAtcParent": "M",
+                "children": []
+            },
+            {
+                "id": "44e011eb-a0a2-4dff-920e-4dfa15f6ca89",
+                "codeAtc": "M05",
+                "name": "Fármacos para o tratamento das doenças ósseas",
+                "level": 2,
+                "codeAtcParent": "M",
+                "children": []
+            }
+        ]
+    },
+    {
+        "id": "61905346-0820-47b7-b4c3-33e097845a64",
+        "codeAtc": "N",
+        "name": "SISTEMA NERVOSO",
+        "level": 1,
+        "codeAtcParent": "N",
+        "children": [
+            {
+                "id": "16cc3f1a-7644-4d34-aa60-425489fbcc28",
+                "codeAtc": "N01",
+                "name": "Anestésicos",
+                "level": 2,
+                "codeAtcParent": "N",
+                "children": []
+            },
+            {
+                "id": "bf584043-4e60-46ea-9cbb-44df9e3519fe",
+                "codeAtc": "N02",
+                "name": "Analgesicos",
+                "level": 2,
+                "codeAtcParent": "N",
+                "children": [
+                    {
+                        "id": "f59e3c7e-a863-469c-89bf-00c8a83d13d3",
+                        "codeAtc": "N02A",
+                        "name": "Opioides",
+                        "level": 3,
+                        "codeAtcParent": "N02",
+                        "children": []
+                    },
+                    {
+                        "id": "68a74548-7035-4889-8d34-023ef357c709",
+                        "codeAtc": "N02B",
+                        "name": "Outros analgésicos e antipiréticos",
+                        "level": 3,
+                        "codeAtcParent": "N02",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": "e4c828a3-6c09-4c36-99b9-cae12433667a",
+                "codeAtc": "N03",
+                "name": "Antiepiléticos",
+                "level": 2,
+                "codeAtcParent": "N",
+                "children": []
+            },
+            {
+                "id": "78732dc0-937b-4d95-b38a-ea4cf2fe2e7e",
+                "codeAtc": "N04",
+                "name": "Fármacos antiparkinsonianos",
+                "level": 2,
+                "codeAtcParent": "N",
+                "children": [
+                    {
+                        "id": "897bca89-f1bf-40ba-bff7-0e1ced14b809",
+                        "codeAtc": "N04A",
+                        "name": "Agentes anticolinérgicos",
+                        "level": 3,
+                        "codeAtcParent": "N04",
+                        "children": []
+                    },
+                    {
+                        "id": "cfe7be07-4345-4bcc-9835-9ea04a3d3a08",
+                        "codeAtc": "N04B",
+                        "name": "Agentes dopaminérgicos",
+                        "level": 3,
+                        "codeAtcParent": "N04",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": "7bea486c-80d0-4a51-8a8d-6ca74eb60f70",
+                "codeAtc": "N05",
+                "name": "Psicolépticos",
+                "level": 2,
+                "codeAtcParent": "N",
+                "children": [
+                    {
+                        "id": "bc8559c5-1fc3-40be-af60-ae3e97aa782e",
+                        "codeAtc": "N05A",
+                        "name": "Antipsicóticos",
+                        "level": 3,
+                        "codeAtcParent": "N05",
+                        "children": [
+                            {
+                                "id": "6e23b66f-8ff9-4ef3-9a56-2f0cf6da0901",
+                                "codeAtc": "N05AA",
+                                "name": "Fenotiazinas com cadeia alifática",
+                                "level": 4,
+                                "codeAtcParent": "N05A",
+                                "children": []
+                            },
+                            {
+                                "id": "ae2cd9a4-2614-4a94-9afa-259cfa437b83",
+                                "codeAtc": "N05AC",
+                                "name": "Fenotiazinas com cadeia lateral piperidínica",
+                                "level": 4,
+                                "codeAtcParent": "N05A",
+                                "children": []
+                            },
+                            {
+                                "id": "4dd51662-a39c-4306-abcc-d192f217abb3",
+                                "codeAtc": "N05AD",
+                                "name": "Derivados de butirofenonas",
+                                "level": 4,
+                                "codeAtcParent": "N05A",
+                                "children": []
+                            },
+                            {
+                                "id": "3ff6c671-c3f6-4138-ba2d-78ec6af659f9",
+                                "codeAtc": "N05AN",
+                                "name": "Lítio",
+                                "level": 4,
+                                "codeAtcParent": "N05A",
+                                "children": []
+                            },
+                            {
+                                "id": "a3e149c5-3c34-4dbd-896e-679082dc0339",
+                                "codeAtc": "N05AX",
+                                "name": "Outros antipsicóticos",
+                                "level": 4,
+                                "codeAtcParent": "N05A",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "4bf7990a-eb44-423b-9606-509120e2b566",
+                        "codeAtc": "N05B",
+                        "name": "Ansiolíticos",
+                        "level": 3,
+                        "codeAtcParent": "N05",
+                        "children": [
+                            {
+                                "id": "ff5c6f07-2239-42d6-8dd2-c1860040f46a",
+                                "codeAtc": "N05BA",
+                                "name": "Benzodiazepínicos",
+                                "level": 4,
+                                "codeAtcParent": "N05B",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "3c2d4a45-ef9c-4228-8175-3826699915ff",
+                        "codeAtc": "N05C",
+                        "name": "Hipnóticos e sedativos",
+                        "level": 3,
+                        "codeAtcParent": "N05",
+                        "children": [
+                            {
+                                "id": "c7371e6e-cac4-4665-a7df-a4232b2607d7",
+                                "codeAtc": "N05CD",
+                                "name": "Benzodiazepínicos",
+                                "level": 4,
+                                "codeAtcParent": "N05C",
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "75eab3bd-e979-4dc3-acd7-dd8f614418c2",
+                "codeAtc": "N06",
+                "name": "Psicoanalépticos",
+                "level": 2,
+                "codeAtcParent": "N",
+                "children": [
+                    {
+                        "id": "39bc5d8a-1bac-46be-8963-8306739561de",
+                        "codeAtc": "N06A",
+                        "name": "Antidepressivos",
+                        "level": 3,
+                        "codeAtcParent": "N06",
+                        "children": [
+                            {
+                                "id": "23794ffa-40c9-4b0b-beaa-e4c68dd2b916",
+                                "codeAtc": "N06AA",
+                                "name": "Derivados tricíclicos",
+                                "level": 4,
+                                "codeAtcParent": "N06A",
+                                "children": []
+                            },
+                            {
+                                "id": "454e3fbb-224a-4893-8aed-a5af24b512e9",
+                                "codeAtc": "N06AB",
+                                "name": "Inibidores seletivos da recaptação de serotonina",
+                                "level": 4,
+                                "codeAtcParent": "N06A",
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "1960d80b-7600-4355-9730-2bf898529f41",
+                "codeAtc": "N07",
+                "name": "Outros fármacos do sistema nervoso",
+                "level": 2,
+                "codeAtcParent": "N",
+                "children": []
+            }
+        ]
+    },
+    {
+        "id": "25c1c873-5098-49dc-b3f8-1139c24abc39",
+        "codeAtc": "P",
+        "name": "ANTIPARASITARIOS",
+        "level": 1,
+        "codeAtcParent": "P",
+        "children": [
+            {
+                "id": "b721c6cb-4ace-4a1c-b74b-c705884c7bcc",
+                "codeAtc": "P01",
+                "name": "Antiprotozoários",
+                "level": 2,
+                "codeAtcParent": "P",
+                "children": [
+                    {
+                        "id": "c858f201-c1fc-4b9f-bf02-293b42eeea47",
+                        "codeAtc": "P01A",
+                        "name": "Agentes contra amebiase e outros antiprotozoários",
+                        "level": 3,
+                        "codeAtcParent": "P01",
+                        "children": [
+                            {
+                                "id": "b39a8212-c43a-4cd7-8253-e56bb9fce834",
+                                "codeAtc": "P01AB",
+                                "name": "Derivados nitroimidazólicos",
+                                "level": 4,
+                                "codeAtcParent": "P01A",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "825ca6f4-1dda-4b69-b2a9-6957a31722d6",
+                        "codeAtc": "P01B",
+                        "name": "Antimaláricos",
+                        "level": 3,
+                        "codeAtcParent": "P01",
+                        "children": [
+                            {
+                                "id": "e9203a19-7508-48d1-a9a5-719b135b2eac",
+                                "codeAtc": "P01BA",
+                                "name": "Aminoquinolinas",
+                                "level": 4,
+                                "codeAtcParent": "P01B",
+                                "children": []
+                            },
+                            {
+                                "id": "1b425590-2f92-4779-96bc-4e5440c47017",
+                                "codeAtc": "P01BD",
+                                "name": "Diaminopiridinas",
+                                "level": 4,
+                                "codeAtcParent": "P01B",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "6e72ce79-15f0-4907-bb8c-587da2bbf063",
+                        "codeAtc": "P01C",
+                        "name": "Agentes contra leishmaniose e tripanossomíase",
+                        "level": 3,
+                        "codeAtcParent": "P01",
+                        "children": [
+                            {
+                                "id": "532e4171-96ca-45e5-a563-54df54e36735",
+                                "codeAtc": "P01CB",
+                                "name": "Compostos antimoniais",
+                                "level": 4,
+                                "codeAtcParent": "P01C",
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "d36a6d9b-91b4-4154-899e-8e8ac63c0fc6",
+                "codeAtc": "P02",
+                "name": "Anti-helmínticos",
+                "level": 2,
+                "codeAtcParent": "P",
+                "children": [
+                    {
+                        "id": "1fdb83b6-9ecb-4145-98fc-a937efc200fd",
+                        "codeAtc": "P02B",
+                        "name": "Antitrematódeos",
+                        "level": 3,
+                        "codeAtcParent": "P02",
+                        "children": [
+                            {
+                                "id": "6227884e-ca05-4f49-beb9-5854c04a2d55",
+                                "codeAtc": "P02BA",
+                                "name": "Derivados de quinolina",
+                                "level": 4,
+                                "codeAtcParent": "P02B",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "7a33322d-53f7-49f0-99c0-79a61dc0b726",
+                        "codeAtc": "P02C",
+                        "name": "Agentes antinematódeos",
+                        "level": 3,
+                        "codeAtcParent": "P02",
+                        "children": [
+                            {
+                                "id": "ffd7b79f-9f61-49b4-bc39-60d00368856c",
+                                "codeAtc": "P02CA",
+                                "name": "Derivados benzoimidazólicos",
+                                "level": 4,
+                                "codeAtcParent": "P02C",
+                                "children": []
+                            },
+                            {
+                                "id": "54ab659a-a725-413a-a034-cb26ce2f964a",
+                                "codeAtc": "P02CF",
+                                "name": "Antinematódeos",
+                                "level": 4,
+                                "codeAtcParent": "P02C",
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "83632911-b9e9-41e3-9da4-8a094e9cad5a",
+                "codeAtc": "P03",
+                "name": "Ectoparasiticidas - incluindo escabicidas",
+                "level": 2,
+                "codeAtcParent": "P",
+                "children": []
+            }
+        ]
+    },
+    {
+        "id": "f7d2bb4e-7be0-4580-bb45-7f6ad1c84800",
+        "codeAtc": "R",
+        "name": "SISTEMA RESPIRATÓRIO",
+        "level": 1,
+        "codeAtcParent": "R",
+        "children": [
+            {
+                "id": "5579cff2-301c-4e33-b078-e017091bdee5",
+                "codeAtc": "R01",
+                "name": "Preparações nasais",
+                "level": 2,
+                "codeAtcParent": "R",
+                "children": [
+                    {
+                        "id": "8add996f-20a5-4a19-8407-38fe8cac992e",
+                        "codeAtc": "R01A",
+                        "name": "Preparações nasais de uso tópico",
+                        "level": 3,
+                        "codeAtcParent": "R01",
+                        "children": [
+                            {
+                                "id": "bde46f5d-5ae6-4cbb-ac97-b35f096e1032",
+                                "codeAtc": "R01AD",
+                                "name": "Corticosteroides",
+                                "level": 4,
+                                "codeAtcParent": "R01A",
+                                "children": []
+                            },
+                            {
+                                "id": "9e4d646d-6c4c-4768-a611-7f7bf3da427e",
+                                "codeAtc": "R01AX",
+                                "name": "Outras preparações nasais",
+                                "level": 4,
+                                "codeAtcParent": "R01A",
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "8811c33f-c1e7-4f93-b4cf-8bd3a86f19e9",
+                "codeAtc": "R03",
+                "name": "Antiasmáticos - fármacos para doenças obstrutivas das vias aéreas",
+                "level": 2,
+                "codeAtcParent": "R",
+                "children": [
+                    {
+                        "id": "689a3f1f-b04b-40a2-ae71-bc228671f6fc",
+                        "codeAtc": "R03A",
+                        "name": "Inalantes Adrenérgicos",
+                        "level": 3,
+                        "codeAtcParent": "R03",
+                        "children": [
+                            {
+                                "id": "4c38751f-2751-4f9d-a6e3-304b7f006a9c",
+                                "codeAtc": "R03AC",
+                                "name": "Agonistas seletivos beta-2-adrenérgicos",
+                                "level": 4,
+                                "codeAtcParent": "R03A",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "bd3257e2-f01a-4bb5-aadd-c7f4a06f52fc",
+                        "codeAtc": "R03B",
+                        "name": "Outros antiasmático, inalantes",
+                        "level": 3,
+                        "codeAtcParent": "R03",
+                        "children": [
+                            {
+                                "id": "a9325c13-321f-401b-bffc-4ae6fdcb0952",
+                                "codeAtc": "R03BA",
+                                "name": "Corticosteroides",
+                                "level": 4,
+                                "codeAtcParent": "R03B",
+                                "children": []
+                            },
+                            {
+                                "id": "bf31e066-b733-43c1-bd15-a663d563a326",
+                                "codeAtc": "R03BB",
+                                "name": "Anticolinérgicos",
+                                "level": 4,
+                                "codeAtcParent": "R03B",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "2950a7a6-5108-4cc5-8fe7-3d20b6e34d7f",
+                        "codeAtc": "R03C",
+                        "name": "Adrenérgicos de uso sistêmico",
+                        "level": 3,
+                        "codeAtcParent": "R03",
+                        "children": []
+                    },
+                    {
+                        "id": "3647de07-e23e-45f1-83ac-41c90e73b5a7",
+                        "codeAtc": "R03D",
+                        "name": "Outros antiasmáticos de uso sistêmico",
+                        "level": 3,
+                        "codeAtcParent": "R03",
+                        "children": [
+                            {
+                                "id": "29c323ad-3d9c-454e-9b18-db969fa539ce",
+                                "codeAtc": "R03DA",
+                                "name": "Xantinas",
+                                "level": 4,
+                                "codeAtcParent": "R03D",
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "e8a3635f-93c2-4489-bdd4-79eb43d1a4e4",
+                "codeAtc": "R06",
+                "name": "Anti-histamínicos de uso sistêmico",
+                "level": 2,
+                "codeAtcParent": "R",
+                "children": []
+            }
+        ]
+    },
+    {
+        "id": "d05dc5ea-4562-46c7-83c6-d3c2bbe1f482",
+        "codeAtc": "S",
+        "name": "ÓRGÃOS DO SENTIDO",
+        "level": 1,
+        "codeAtcParent": "S",
+        "children": [
+            {
+                "id": "91cc6568-c372-4517-be7e-c64c4c567452",
+                "codeAtc": "S01",
+                "name": "Oftalmológicos",
+                "level": 2,
+                "codeAtcParent": "S",
+                "children": [
+                    {
+                        "id": "fb2572f4-55eb-4b34-9e7f-044e7c3bd12f",
+                        "codeAtc": "S01A",
+                        "name": "Anti-infecciosos",
+                        "level": 3,
+                        "codeAtcParent": "S01",
+                        "children": []
+                    },
+                    {
+                        "id": "410a4754-83be-4e8b-88fd-3fdb1d69133b",
+                        "codeAtc": "S01E",
+                        "name": "Preparações antiglaucoma e mióticos",
+                        "level": 3,
+                        "codeAtcParent": "S01",
+                        "children": []
+                    },
+                    {
+                        "id": "ad8fce75-1840-475a-9045-a4d614d5c994",
+                        "codeAtc": "S01F",
+                        "name": "Midriátricos e cicloplégicos",
+                        "level": 3,
+                        "codeAtcParent": "S01",
+                        "children": []
+                    },
+                    {
+                        "id": "405f6be8-1728-45a6-af0b-842e00235cbb",
+                        "codeAtc": "S01G",
+                        "name": "Descongestionantes e antialérgicos",
+                        "level": 3,
+                        "codeAtcParent": "S01",
+                        "children": []
+                    },
+                    {
+                        "id": "b9958d70-1d20-4049-ae41-9991281c0e90",
+                        "codeAtc": "S01H",
+                        "name": "Anestésicos locais",
+                        "level": 3,
+                        "codeAtcParent": "S01",
+                        "children": []
+                    },
+                    {
+                        "id": "25b08777-b933-4e6c-802e-ff43a57a6000",
+                        "codeAtc": "S01J",
+                        "name": "Agentes de diagnóstico",
+                        "level": 3,
+                        "codeAtcParent": "S01",
+                        "children": []
+                    },
+                    {
+                        "id": "e30a6330-4112-44eb-91cd-747e404e4513",
+                        "codeAtc": "S01X",
+                        "name": "Outros oftalmológicos",
+                        "level": 3,
+                        "codeAtcParent": "S01",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": "753c1a46-4a87-4ac9-bea9-6ba4794d30aa",
+                "codeAtc": "S02",
+                "name": "Otológicos",
+                "level": 2,
+                "codeAtcParent": "S",
+                "children": [
+                    {
+                        "id": "6f11d2eb-9582-4fb1-ac7d-1bd80276e2c7",
+                        "codeAtc": "S02C",
+                        "name": "Corticosteroides e anti-infecciosos em associação",
+                        "level": 3,
+                        "codeAtcParent": "S02",
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "691a6271-2291-40b4-bbbe-9a7526484d98",
+        "codeAtc": "V",
+        "name": "VÁRIOS",
+        "level": 1,
+        "codeAtcParent": "V",
+        "children": [
+            {
+                "id": "24c5a646-aa0c-4c6b-a7cb-80e8ef0b3a5b",
+                "codeAtc": "V03",
+                "name": "Todos outros produtos terapêuticos",
+                "level": 2,
+                "codeAtcParent": "V",
+                "children": []
+            },
+            {
+                "id": "f0b43b2f-7c9d-4752-9e49-f9412e0ec6eb",
+                "codeAtc": "V04",
+                "name": "Agentes de diagnóstico",
+                "level": 2,
+                "codeAtcParent": "V",
+                "children": [
+                    {
+                        "id": "1acc2ca8-88e3-45cf-a4f4-9682d461ff7d",
+                        "codeAtc": "V04B",
+                        "name": "Testes de urina",
+                        "level": 3,
+                        "codeAtcParent": "V04",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": "62566b73-83d6-4642-b1bd-9d905506b21c",
+                "codeAtc": "V07",
+                "name": "Todos outros produtos não terapêuticos",
+                "level": 2,
+                "codeAtcParent": "V",
+                "children": []
+            }
+        ]
+    }
+]
