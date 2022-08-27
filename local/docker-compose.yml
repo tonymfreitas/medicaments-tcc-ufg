@@ -1,0 +1,18 @@
+version: "3"
+services:
+  postgres-db:
+    image: postgres:14-alpine
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=medicaments
+    ports:
+      - "5432:5432"
+
+  liquibase:
+    image: liquibase/liquibase:latest
+    volumes:
+      - ../src/main/resources/db/changelog:/liquibase/changelog
+    command: --driver=org.postgresql.Driver --url="jdbc:postgresql://postgres-db:5432/medicaments" --defaultSchemaName=public --changeLogFile=db.changelog-master.yaml --username=postgres --password=postgres  --logLevel=info update
+    depends_on:
+      - postgres-db
