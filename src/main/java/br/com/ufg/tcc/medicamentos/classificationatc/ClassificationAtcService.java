@@ -11,11 +11,14 @@ import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -94,11 +97,17 @@ public class ClassificationAtcService {
     // Jeito rápido de ler o arquivo, definir um arquivo padrão em que poderíamos realizar o upload para alimentar o sistema.
     // Método que lê todos os dados da planilha e grava no banco de daos PostgreSQL.
     // Verificar se falta dados na planilha e se os que existem são satisfatórios para criar os serviços de cadastro.
-    public void save() {
+    public void save(final MultipartFile multipartFile) {
 
         try {
 
-            FileInputStream excelFile = new FileInputStream(new File(FILE_NAME));
+            File file = new File("");
+
+            try (OutputStream os = new FileOutputStream(file)) {
+                os.write(multipartFile.getBytes());
+            }
+
+            FileInputStream excelFile = new FileInputStream(file);
             Workbook workbook = new XSSFWorkbook(excelFile);
             Sheet datatypeSheet = workbook.getSheetAt(0);
             Iterator<Row> iterator = datatypeSheet.iterator();

@@ -7,3 +7,6 @@ stop-infrastructure: ## Stop all infrastructure
 
 execute-liquibase:
 	/bin/bash local/db/liquibase/update.sh
+
+start-backend:
+	./local/start.sh
