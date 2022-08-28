@@ -14,6 +14,13 @@ Banco de dados: PostgreSQL.
     username: admin
     password: password
 
+##### Rodar em ambiente local :
+    Dar permissao chmod +x ao Makefile e depois executar
+    Rodar backend local e front end.
+
+    Os passos anteriores podem ser ignorados, e o ambiente completo pode ser iniciado apenas executando o docker-compose-local.yml
+    
+
 ##### JOB de envio das informações para um bucket S3 :
 Exite um JOB que roda a cada hora enviando dois arquivos JSON para um bucket S3.
 Da forma atual em que se encontra os arquivos são:
@@ -26,3 +33,9 @@ Da forma atual em que se encontra os arquivos são:
 #### Version 2.0
     Criação do CRUD completo de medicamento e classificação ATC
     Realização do envio para o BUCKET S3
+
+#### Version 3.0
+    Ajustes na configuração local incluindo a utilização de containers docker.
+    Modificado endpoint para gerar dados a partir de um csv.
+    Adicionado projeto web para pré-visualização da classificação ATC e seus produtos.
+    
