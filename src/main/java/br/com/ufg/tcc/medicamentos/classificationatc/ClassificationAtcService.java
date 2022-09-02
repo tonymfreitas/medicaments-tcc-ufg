@@ -101,7 +101,7 @@ public class ClassificationAtcService {
 
         try {
 
-            File file = new File("");
+            File file = new File("medicaments.csv");
 
             try (OutputStream os = new FileOutputStream(file)) {
                 os.write(multipartFile.getBytes());
@@ -215,7 +215,6 @@ public class ClassificationAtcService {
                     param.setComponent(MedicamentComponent.BASIC);
                     param.setVia(values[4]);
                     param.setUse(values[5]);
-                    param.setRestriction(values[6]);
 
                     try {
                         medRepository.save(param);

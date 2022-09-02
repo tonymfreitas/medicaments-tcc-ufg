@@ -10,3 +10,6 @@ execute-liquibase:
 
 start-backend:
 	./local/start.sh
+
+
+#docker stop $(docker ps -a -q)
