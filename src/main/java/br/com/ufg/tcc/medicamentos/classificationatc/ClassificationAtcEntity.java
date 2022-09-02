@@ -16,14 +16,14 @@ public class ClassificationAtcEntity {
     @Id
     private UUID id;
 
-    @Column(name = "codeatc")
+    @Column(name = "code_atc")
     private String codeAtc;
 
     private String name;
 
     private Integer level;
 
-    @Column(name = "codeatcparent")
+    @Column(name = "code_atc_parent")
     private String codeAtcParent;
 
     public ClassificationAtcEntity(UUID id) {

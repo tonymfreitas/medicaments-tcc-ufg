@@ -38,8 +38,9 @@ public class AwsClassificationAtcService {
                             "classifications.json",
                             file).withCannedAcl(CannedAccessControlList.PublicRead)
             );
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        } catch (Exception e) {
+            System.out.println("Failed when sync data to aws bucket s3");
+            System.out.println(e.getMessage());
         } finally {
             file.delete();
         }

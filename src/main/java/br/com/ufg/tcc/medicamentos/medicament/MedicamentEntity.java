@@ -14,16 +14,17 @@ public class MedicamentEntity {
     @Id
     private UUID id;
 
+    @Column(name = "id_classification_atc")
     private UUID idclassificationatc;
 
-    @Column(name = "codeatc")
+    @Column(name = "code_atc")
     private String codeAtc;
 
     private String name;
 
     private String unity;
 
-    @Column(name = "idpharmaceuticalform")
+    @Column(name = "id_pharmaceutical_form")
     private UUID idPhamaceuticalForm;
 
     @Enumerated(EnumType.STRING)
@@ -32,7 +33,5 @@ public class MedicamentEntity {
     private String via;
 
     private String use;
-
-    private String restriction;
 
 }
