@@ -30,7 +30,6 @@ public class AddressEntity {
     @Column(name = "id_state")
     private String idState;
 
-
     public static AddressEntity from(final EstablishmentCsv e) {
 
         var address = new AddressEntity();

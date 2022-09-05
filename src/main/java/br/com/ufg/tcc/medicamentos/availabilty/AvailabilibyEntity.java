@@ -17,12 +17,14 @@ public class AvailabilibyEntity {
     @Id
     private UUID id;
 
-    private String address;
+    @Column(name = "id_medicament")
+    private UUID idMedicament;
 
-    private BigDecimal latitude;
-
-    private BigDecimal longitude;
+    @Column(name = "code_cnes")
+    private String codeCnes;
 
     private BigInteger quantity;
+
+    private String restriction;
 
 }

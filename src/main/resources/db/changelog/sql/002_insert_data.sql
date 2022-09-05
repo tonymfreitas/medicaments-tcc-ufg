@@ -1,4 +1,5 @@
 INSERT INTO pharmaceuticalform (code, description) VALUES ('DEFAULT', 'DEFAULT');
+insert into outbox (event, status, data) values ('SYNC_ESTABLISHMENT_DATA', 'CREATED', '202207');
 
 INSERT INTO states (id, name, code) VALUES ('52','Goiás', 'GO');
 INSERT INTO states (id, name, code) VALUES ('51','Mato Grosso', 'MT');

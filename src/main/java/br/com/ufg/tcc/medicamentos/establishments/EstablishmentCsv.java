@@ -1,83 +1,73 @@
 package br.com.ufg.tcc.medicamentos.establishments;
 
-import com.opencsv.bean.CsvBindByName;
+import org.apache.commons.csv.CSVRecord;
 
+import lombok.Data;
+
+@Data
 public class EstablishmentCsv {
 
-    @CsvBindByName(column = "CNES", required = true)
     private String cnes;
 
-    @CsvBindByName(column = "CNPJ")
     private String cnpj;
 
-    @CsvBindByName(column = "NAME")
     private String name;
 
-    @CsvBindByName(column = "STREET")
     private String street;
 
-    @CsvBindByName(column = "NUMBER")
     private String number;
 
-    @CsvBindByName(column = "COMPLEMENT")
     private String complement;
 
-    @CsvBindByName(column = "DISTRICT")
     private String district;
 
-    @CsvBindByName(column = "CEP")
     private String cep;
 
-    @CsvBindByName(column = "TYPE_ID")
     private String type_id;
 
-    @CsvBindByName(column = "PHONE")
     private String phone;
 
-    @CsvBindByName(column = "STATE_ID")
     private String state_id;
 
-    public String getCnes() {
-        return cnes;
+    public EstablishmentCsv(String cnes,
+                            String cnpj,
+                            String name,
+                            String street,
+                            String number,
+                            String complement,
+                            String district,
+                            String cep,
+                            String type_id,
+                            String phone,
+                            String state_id) {
+        this.cnes = cnes;
+        this.cnpj = cnpj;
+        this.name = name;
+        this.street = street;
+        this.number = number;
+        this.complement = complement;
+        this.district = district;
+        this.cep = cep;
+        this.type_id = type_id;
+        this.phone = phone;
+        this.state_id = state_id;
     }
 
-    public String getCnpj() {
-        return cnpj;
+    public static EstablishmentCsv from(final CSVRecord csvRecord) {
+        return new EstablishmentCsv(
+                csvRecord.get(EstablishmentFieldsCsv.CO_CNES.getIndex()),
+                csvRecord.get(EstablishmentFieldsCsv.NU_CNPJ_MANTENEDORA.getIndex()),
+                csvRecord.get(EstablishmentFieldsCsv.NO_FANTASIA.getIndex()),
+                csvRecord.get(EstablishmentFieldsCsv.NO_LOGRADOURO.getIndex()),
+                csvRecord.get(EstablishmentFieldsCsv.NU_ENDERECO.getIndex()),
+                csvRecord.get(EstablishmentFieldsCsv.NO_COMPLEMENTO.getIndex()),
+                csvRecord.get(EstablishmentFieldsCsv.NO_BAIRRO.getIndex()),
+                csvRecord.get(EstablishmentFieldsCsv.CO_CEP.getIndex()),
+                csvRecord.get(EstablishmentFieldsCsv.CO_REGIAO_SAUDE.getIndex()),
+                csvRecord.get(EstablishmentFieldsCsv.NU_TELEFONE.getIndex()),
+                csvRecord.get(EstablishmentFieldsCsv.CO_ESTADO_GESTOR.getIndex())
+        );
     }
 
-    public String getName() {
-        return name;
-    }
 
-    public String getStreet() {
-        return street;
-    }
-
-    public String getNumber() {
-        return number;
-    }
-
-    public String getComplement() {
-        return complement;
-    }
-
-    public String getDistrict() {
-        return district;
-    }
-
-    public String getCep() {
-        return cep;
-    }
-
-    public String getType_id() {
-        return type_id;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public String getState_id() {
-        return state_id;
-    }
 }

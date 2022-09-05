@@ -1,5 +1,9 @@
 package br.com.ufg.tcc.medicamentos.establishments;
 
+import br.com.ufg.tcc.medicamentos.MedicamentosApplication;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,17 +17,20 @@ import io.swagger.annotations.ApiOperation;
 @RestController
 @RequestMapping("/establishements")
 @Api(tags = "Establishement")
-public class EstablishementController {
+public class EstablishmentController {
+
+    final static Logger logger = LoggerFactory.getLogger(EstablishmentController.class);
+
 
     @Autowired
     private EstablishmentService establishmentService;
 
-    @PostMapping(path = "/file",
-                 produces = "application/json")
-    @ApiOperation(value = "Cadastra estabelecimentos de saúde por arquivo csv")
-    public ResponseEntity<String> registerEstablishments(MultipartFile file) {
-        establishmentService.save(file);
-        return ResponseEntity.ok("File processed");
+    @PostMapping(path="sync-data", produces = "application/json")
+    @ApiOperation(value = "")
+    public ResponseEntity<String> registerEstablishments() {
+        establishmentService.saveRequestSyncData();
+        logger.info("Processing request is running.");
+        return ResponseEntity.ok("Processing request is running.");
     }
 
 }

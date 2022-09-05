@@ -225,6 +225,8 @@ public class ClassificationAtcService {
 
             }
 
+            file.delete();
+
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

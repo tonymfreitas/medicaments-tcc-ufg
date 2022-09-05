@@ -5,7 +5,6 @@ import br.com.ufg.tcc.medicamentos.address.AddressService;
 import br.com.ufg.tcc.medicamentos.outbox.OutBoxRepository;
 import br.com.ufg.tcc.medicamentos.outbox.OutboxEntity;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.opencsv.bean.CsvToBean;
 import com.opencsv.bean.CsvToBeanBuilder;
@@ -17,12 +16,16 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.time.Instant;
+import java.time.temporal.ChronoUnit;
 import java.util.List;
+import java.util.Objects;
 import java.util.UUID;
 
 import javax.transaction.Transactional;
 
 import static br.com.ufg.tcc.medicamentos.outbox.OutboxEventType.REGISTER_ESTABLISHMENT;
+import static br.com.ufg.tcc.medicamentos.outbox.OutboxEventType.SYNC_ESTABLISHMENT_DATA;
 import static br.com.ufg.tcc.medicamentos.outbox.OutboxStatus.CREATED;
 
 @Service
@@ -41,21 +44,34 @@ public class EstablishmentService {
     private OutBoxRepository outBoxRepository;
 
 
-    public void save(final MultipartFile file) {
-        final var establishmentsCsv = convertToModel(file, EstablishmentCsv.class);
+    public void saveRequestSyncData() {
+
+        final var outbox = outBoxRepository.findEventByType(SYNC_ESTABLISHMENT_DATA.name());
+
+        if (Objects.nonNull(outbox)) {
+            outbox.setStatus(CREATED.name());
+            outbox.setExecutionDate(Instant.now());
+
+            outBoxRepository.save(outbox);
+        }
+
+    }
+
+    public void saveOutboxSynEstablishment(final List<EstablishmentCsv> establishmentCsvs) {
 
         try {
-            final var json = objectMapper.writeValueAsString(establishmentsCsv);
+            final var json = objectMapper.writeValueAsString(establishmentCsvs);
 
             final var outbox = new OutboxEntity();
             outbox.setId(UUID.randomUUID());
             outbox.setData(json);
             outbox.setStatus(CREATED.name());
             outbox.setEvent(REGISTER_ESTABLISHMENT.name());
+            outbox.setExecutionDate(Instant.now());
 
             outBoxRepository.save(outbox);
 
-        } catch (JsonProcessingException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -85,7 +101,6 @@ public class EstablishmentService {
         addressService.save(address);
 
         var establishment = new EstablishmentEntity();
-        establishment.setId(UUID.randomUUID());
         establishment.setCnpj(e.getCnpj());
         establishment.setName(e.getName());
         establishment.setPhone(e.getPhone());

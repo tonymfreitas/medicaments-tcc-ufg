@@ -55,8 +55,7 @@ CREATE TABLE adresses (
 );
 
 CREATE TABLE establishments (
-    id UUID NOT NULL DEFAULT uuid_generate_v1() PRIMARY KEY,
-    code_cnes VARCHAR(30),
+    code_cnes VARCHAR(50) PRIMARY KEY,
     cnpj VARCHAR(20),
     name VARCHAR(100),
     phone VARCHAR(30),
@@ -68,10 +67,10 @@ CREATE TABLE establishments (
 CREATE TABLE availability (
     id UUID NOT NULL DEFAULT uuid_generate_v1(),
     id_medicament uuid,
-    id_establishment uuid,
+    code_cnes VARCHAR(50),
     quantity bigint,
     restriction VARCHAR(300),
-    CONSTRAINT fk_av_establishment FOREIGN KEY (id_establishment) REFERENCES establishments(id),
+    CONSTRAINT fk_av_establishment FOREIGN KEY (code_cnes) REFERENCES establishments(code_cnes),
     CONSTRAINT fk_av_medicament FOREIGN KEY (id_medicament) REFERENCES medicaments(id)
 );
 
@@ -79,6 +78,7 @@ CREATE TABLE outbox (
     id UUID NOT NULL DEFAULT uuid_generate_v1() PRIMARY KEY,
     event VARCHAR(30),
     status VARCHAR(30),
-    data text
+    data text,
+    execution_date timestamp DEFAULT now()
 );
 

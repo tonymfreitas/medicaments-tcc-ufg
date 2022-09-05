@@ -17,9 +17,19 @@ public interface OutBoxRepository extends CrudRepository<OutboxEntity, UUID> {
     @Query(value = "select m from outbox m where m.event = :event and m.status = :status")
     List<OutboxEntity> listEventsByType(@Param("event") String event, @Param("status") String status);
 
+    @Query(value = "select m from outbox m where m.event = :event")
+    OutboxEntity findEventByType(@Param("event") String event);
+
     @Modifying
     @Query("update outbox o set o.status = :status where o.id = :id")
     @Transactional
     void updateStatus(@Param(value = "id") UUID id, @Param(value = "status") String status);
+
+    @Modifying
+    @Query("update outbox o set o.data = :data, o.status = :status where o.id = :id")
+    @Transactional
+    void updateData(@Param(value = "id") UUID id,
+                    @Param(value = "data") String data,
+                    @Param(value = "status") String status);
 
 }

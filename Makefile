@@ -11,5 +11,13 @@ execute-liquibase:
 start-backend:
 	./local/start.sh
 
+start-monitoring: ## Run all infrastructure
+	docker-compose -f ./local/monitoring/docker-compose-monitoring.yml build
+	docker-compose -f ./local/monitoring/docker-compose-monitoring.yml up -d
+
+stop-monitoring:
+	docker-compose -f ./local/monitoring/docker-compose-monitoring.yml down
+
+
 
 #docker stop $(docker ps -a -q)

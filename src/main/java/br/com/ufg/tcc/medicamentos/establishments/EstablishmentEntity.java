@@ -13,9 +13,8 @@ import lombok.Data;
 @Data
 public class EstablishmentEntity {
 
-    @Id
-    private UUID id;
 
+    @Id
     @Column(name = "code_cnes")
     private String codeCnes;
 
@@ -34,7 +33,6 @@ public class EstablishmentEntity {
     public static EstablishmentEntity from(final EstablishmentCsv e, final UUID addressId) {
 
         var establishment = new EstablishmentEntity();
-        establishment.setId(UUID.randomUUID());
         establishment.setCnpj(e.getCnpj());
         establishment.setName(e.getName());
         establishment.setPhone(e.getPhone());
