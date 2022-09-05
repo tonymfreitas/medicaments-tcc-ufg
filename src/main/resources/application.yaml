@@ -3,9 +3,10 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/medicaments
+    jdbcUrl: jdbc:postgresql://localhost:5432/medicaments
     password: postgres
     username: postgres
+    driverClassName: org.postgresql.Driver
 
   jpa:
     hibernate:
