@@ -12,13 +12,20 @@ public class AvailabilibyService {
     @Autowired
     private AvailabilibyRepository repository;
 
-    public void save(final AvailabilibyEntity entity) {
+    public void save(final Availabiliby entity) {
         entity.setId(UUID.randomUUID());
         repository.save(entity);
     }
 
-    public List<AvailabilibyEntity> findAll() {
-        return repository.findAll();
+    public List<Availabiliby> listAll() {
+        return repository.getAll();
     }
 
+    public List<Availabiliby> findByState(final String state) {
+        return repository.findByState(state);
+    }
+
+    public List<Availabiliby> listByState(final String state) {
+        return repository.findByState(state);
+    }
 }
