@@ -3,7 +3,11 @@ package br.com.ufg.tcc.medicamentos.availabilty;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
@@ -19,10 +23,12 @@ public class AvailabilityController {
         return ResponseEntity.ok(availabilibyService.findAll());
     }
 
-    @PostMapping(produces = "application/json", consumes = "application/json")
+    @PostMapping(produces = "application/json",
+                 consumes = "application/json")
     public ResponseEntity create(@RequestBody AvailabilibyEntity availabilibyEntity) {
         availabilibyService.save(availabilibyEntity);
-        return ResponseEntity.status(HttpStatus.CREATED).build();
+        return ResponseEntity.status(HttpStatus.CREATED)
+                             .build();
     }
 
 }

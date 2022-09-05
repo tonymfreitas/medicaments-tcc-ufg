@@ -17,8 +17,8 @@ spring:
 
 aws:
   credentials:
-    access-key: AKIA4YKBJIG2OC32EBTF
-    secret-key: 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
+    access-key: AKIA4YKBJIG2CQL56CID
+    secret-key: 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
     bucket-name: medicaments-tcc-ufg
 
 management:
