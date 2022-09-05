@@ -7,7 +7,12 @@ import br.com.ufg.tcc.medicamentos.medicament.MedicamentEntity;
 import br.com.ufg.tcc.medicamentos.medicament.MedicamentRepository;
 import br.com.ufg.tcc.medicamentos.medicament.pharmaceuticalform.PharmaceuticalFormEntity;
 import br.com.ufg.tcc.medicamentos.medicament.pharmaceuticalform.PharmaceuticalFormRepository;
-import org.apache.poi.ss.usermodel.*;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,7 +24,13 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Service
@@ -40,7 +51,7 @@ public class ClassificationAtcService {
     private AwsClassificationAtcService awsClassificationAtcService;
 
     public List<ClassificacionAtc> getAll() {
-        List<ClassificationAtcEntity> all = repository.findAll();
+        List<ClassificationAtc> all = repository.listAll();
         List<ClassificacionAtc> classifications = new ArrayList<>();
         List<ClassificacionAtc> classificacionAtcs = new ArrayList<>();
 
@@ -48,12 +59,19 @@ public class ClassificationAtcService {
             classifications.add(convert(a));
         });
 
-        List<ClassificacionAtc> levelOne = classifications.stream().filter(c -> c.getLevel() == 1).collect(Collectors.toList());
+        List<ClassificacionAtc> levelOne = classifications.stream()
+                                                          .filter(c -> c.getLevel() == 1)
+                                                          .collect(Collectors.toList());
         levelOne.forEach(l -> {
 
             if (l != null) {
                 //Get level 1
-                ClassificacionAtc oneLevel = new ClassificacionAtc(l.getId(), l.getCodeAtc(), l.getName(), l.getLevel(), l.getCodeAtcParent());
+                ClassificacionAtc oneLevel = new ClassificacionAtc(
+                        l.getId(),
+                        l.getCodeAtc(),
+                        l.getName(),
+                        l.getLevel(),
+                        l.getCodeAtcParent());
 
                 //Get level 2
                 List<ClassificacionAtc> twoLevels = getLevelsChildren(oneLevel, classifications);
@@ -81,8 +99,14 @@ public class ClassificationAtcService {
         return classificacionAtcs;
     }
 
-    private List<ClassificacionAtc> getLevelsChildren(ClassificacionAtc level, List<ClassificacionAtc> classifications) {
-        List<ClassificacionAtc> levelsChildren = classifications.stream().filter(a -> Objects.nonNull(a.getCodeAtcParent()) && a.getCodeAtcParent().equals(level.getCodeAtc()) && level.getCodeAtc() != a.getCodeAtc()).collect(Collectors.toList());
+    private List<ClassificacionAtc> getLevelsChildren(ClassificacionAtc level,
+                                                      List<ClassificacionAtc> classifications) {
+        List<ClassificacionAtc> levelsChildren = classifications.stream()
+                                                                .filter(a -> Objects.nonNull(a.getCodeAtcParent()) &&
+                                                                        a.getCodeAtcParent()
+                                                                         .equals(level.getCodeAtc()) &&
+                                                                        level.getCodeAtc() != a.getCodeAtc())
+                                                                .collect(Collectors.toList());
         return levelsChildren.isEmpty() ? new ArrayList<>() : levelsChildren;
     }
 
@@ -113,7 +137,7 @@ public class ClassificationAtcService {
             Iterator<Row> iterator = datatypeSheet.iterator();
 
             List<String> medicamentos = new ArrayList<>();
-            List<ClassificationAtcEntity> classificationsAtc = new ArrayList<>();
+            List<ClassificationAtc> classificationsAtc = new ArrayList<>();
 
             PharmaceuticalFormEntity pharmaceuticalFormDefault = pharmaceuticalFormRepository.findByCode("DEFAULT");
 
@@ -121,7 +145,9 @@ public class ClassificationAtcService {
 
                 Row currentRow = iterator.next();
                 Iterator<Cell> cellIterator = currentRow.iterator();
-                ClassificationAtcEntity grupoAtcMedicament = new ClassificationAtcEntity(UUID.randomUUID());
+                ClassificationAtc grupoAtcMedicament = ClassificationAtc.builder()
+                                                                        .id(UUID.randomUUID())
+                                                                        .build();
 
                 int numberCell = 0;
                 String medicamento = "";
@@ -131,7 +157,8 @@ public class ClassificationAtcService {
                     Cell currentCell = cellIterator.next();
 
                     if (currentCell.getCellTypeEnum() == CellType.STRING) {
-                        int sizeCodeAtc = currentCell.getStringCellValue().length();
+                        int sizeCodeAtc = currentCell.getStringCellValue()
+                                                     .length();
                         String codeAtc = currentCell.getStringCellValue();
                         if (numberCell == 0 && sizeCodeAtc < 6) {
                             grupoAtcMedicament.setCodeAtc(codeAtc);
@@ -157,10 +184,15 @@ public class ClassificationAtcService {
                             }
 
 
-                        } else if (numberCell == 1 && grupoAtcMedicament.getCodeAtc() != null && grupoAtcMedicament.getCodeAtc().length() < 6) {
+                        } else if (numberCell == 1 &&
+                                grupoAtcMedicament.getCodeAtc() != null &&
+                                grupoAtcMedicament.getCodeAtc()
+                                                  .length() < 6) {
                             grupoAtcMedicament.setName(currentCell.getStringCellValue());
                         } else {
-                            if (numberCell == 0 && currentCell.getStringCellValue().length() > 5) {
+                            if (numberCell == 0 &&
+                                    currentCell.getStringCellValue()
+                                               .length() > 5) {
                                 med = true;
                                 medicamento = medicamento + currentCell.getStringCellValue() + "-";
                             }
@@ -200,14 +232,16 @@ public class ClassificationAtcService {
                         continue;
                     }
 
-                    List<ClassificationAtcEntity> groups = classificationsAtc
+                    List<ClassificationAtc> groups = classificationsAtc
                             .stream()
                             .filter(c -> values[0].contains(c.getCodeAtc()))
-                            .sorted(Comparator.comparing(ClassificationAtcEntity::getLevel).reversed())
+                            .sorted(Comparator.comparing(ClassificationAtc::getLevel)
+                                              .reversed())
                             .collect(Collectors.toList());
 
                     param.setId(UUID.randomUUID());
-                    param.setIdclassificationatc(groups.get(0).getId());
+                    param.setIdclassificationatc(groups.get(0)
+                                                       .getId());
                     param.setCodeAtc(values[0]);
                     param.setName(values[1]);
                     param.setUnity(values[2]);
@@ -234,8 +268,12 @@ public class ClassificationAtcService {
         }
     }
 
-    private ClassificationAtcEntity convert(ClassificacionAtc classificacionAtc) {
-        ClassificationAtcEntity entity = new ClassificationAtcEntity(Objects.nonNull(classificacionAtc.getId()) ? classificacionAtc.getId() : UUID.randomUUID());
+    private ClassificationAtc convert(ClassificacionAtc classificacionAtc) {
+        ClassificationAtc entity = ClassificationAtc.builder()
+                                                    .id(Objects.nonNull(classificacionAtc.getId()) ?
+                                                                classificacionAtc.getId() :
+                                                                UUID.randomUUID())
+                                                    .build();
         entity.setCodeAtc(classificacionAtc.getCodeAtc());
         entity.setCodeAtcParent(classificacionAtc.getCodeAtcParent());
         entity.setLevel(classificacionAtc.getLevel());
@@ -243,7 +281,7 @@ public class ClassificationAtcService {
         return entity;
     }
 
-    private ClassificacionAtc convert(ClassificationAtcEntity entity) {
+    private ClassificacionAtc convert(ClassificationAtc entity) {
         ClassificacionAtc classificacionAtc = new ClassificacionAtc();
         classificacionAtc.setCodeAtc(entity.getCodeAtc());
         classificacionAtc.setCodeAtcParent(entity.getCodeAtcParent());
@@ -253,42 +291,42 @@ public class ClassificationAtcService {
         return classificacionAtc;
     }
 
-    private List<ClassificacionAtc> convert(List<ClassificationAtcEntity> entitys) {
+    private List<ClassificacionAtc> convert(List<ClassificationAtc> entitys) {
         List<ClassificacionAtc> classifications = new ArrayList<>();
         entitys.forEach(e -> classifications.add(convert(e)));
         return classifications;
     }
 
     public ClassificacionAtc findById(UUID uuid) {
-        ClassificationAtcEntity entity = Optional.ofNullable(repository.findById(uuid).orElseThrow(RuntimeException::new)).get();
+        ClassificationAtc entity = Optional.ofNullable(repository.findById(uuid)
+                                                                 .orElseThrow(RuntimeException::new))
+                                           .get();
         return convert(entity);
     }
 
     private void setChildren(ClassificacionAtc classificationAtc) {
-        List<ClassificationAtcEntity> children = repository.findByCodeAtcParent(classificationAtc.getCodeAtc());
+        List<ClassificationAtc> children = repository.findByCodeAtcParent(classificationAtc.getCodeAtc());
 
         if (Objects.nonNull(children)) {
             classificationAtc.setChildren(convert(children));
 
-            classificationAtc.getChildren().forEach(c -> {
-                setChildren(c);
-            });
+            classificationAtc.getChildren()
+                             .forEach(c -> {
+                                 setChildren(c);
+                             });
         } else {
             classificationAtc.setChildren(new ArrayList<>());
         }
     }
 
     public ClassificacionAtc findByCode(String codeAtc) {
-        ClassificationAtcEntity entityOpt = repository.findByCode(codeAtc).orElseThrow(ResourceNotFoundException::new);
+        ClassificationAtc entityOpt = repository.findByCode(codeAtc)
+                                                .orElseThrow(ResourceNotFoundException::new);
         ClassificacionAtc classificationAtc = convert(entityOpt);
 
         setChildren(classificationAtc);
 
         return classificationAtc;
-    }
-
-    public void delete(UUID uuid) {
-        repository.deleteById(uuid);
     }
 
     public void update(ClassificacionAtc classificacionAtc) {

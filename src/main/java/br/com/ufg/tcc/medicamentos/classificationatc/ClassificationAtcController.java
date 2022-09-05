@@ -79,17 +79,6 @@ public class ClassificationAtcController {
                                             .build());
     }
 
-    @DeleteMapping(path = "/{uuid}",
-                   produces = "application/json")
-    @ApiIgnore
-    public ResponseEntity<ResponseApi> deleteMedicament(@PathVariable UUID uuid) {
-        service.delete(uuid);
-        return ResponseEntity.ok(ResponseApi.builder()
-                                            .message("Classificação ATC deletado com sucesso.")
-                                            .status(HttpStatus.OK)
-                                            .build());
-    }
-
     @ApiIgnore
     @PostMapping(path = "/save",
                  produces = "application/json")

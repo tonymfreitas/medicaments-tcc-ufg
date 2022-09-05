@@ -2,6 +2,7 @@ package br.com.ufg.tcc.medicamentos.availabilty;
 
 import br.com.ufg.tcc.medicamentos.common.MapParameter;
 
+import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 
 import java.util.HashMap;
@@ -22,7 +23,7 @@ public class AvailabilityMapParameter extends MapParameter<Availabiliby> {
         params.put("code_cnes", source.getCodeCnes());
         params.put("quantity", source.getQuantity());
         params.put("restriction", source.getRestriction());
-        return null;
+        return new MapSqlParameterSource(params);
     }
 
 }
